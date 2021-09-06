@@ -7,8 +7,13 @@ Read the image from the specified URL and enable it to be handled by OpenCV.
 * Pillow 6.1.0 or later
  
 # Installation
-利用したいPythonプログラムと同階層にimread_from_urlディレクトリをコピーしてください。<Br>
-
+以下のいずれかの方法をご利用ください。
+* 利用したいPythonプログラムと同階層にimread_from_urlディレクトリをコピーする。<br>
+* GitHub URLを指定しpipインストールする。<Br>
+```bash
+pip install git+https://github.com/Kazuhito00/imread_from_url
+```
+ 
 # Usage
 サンプルの実行方法は以下です。
  
