@@ -19,7 +19,7 @@ pip install imread-from-url
 ```
  
 # Usage
-サンプルの実行方法は以下です。
+使用例は以下です。
  
 ```python
 import cv2
