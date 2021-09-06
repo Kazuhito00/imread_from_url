@@ -1,5 +1,5 @@
 # imread_from_url
-指定されたURLから画像を読み取り、OpenCVで利用できる形式を返す関数です。<Br>
+指定されたURLから画像を読み取り、OpenCV形式で返す関数です。<Br>
 Read the image from the specified URL and enable it to be handled by OpenCV.
  
 # Requirement
