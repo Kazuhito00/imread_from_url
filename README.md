@@ -13,6 +13,10 @@ Read the image from the specified URL and enable it to be handled by OpenCV.
 ```bash
 pip install git+https://github.com/Kazuhito00/imread_from_url
 ```
+* PyPIからインストールする。<Br>
+```bash
+pip install imread-from-url
+```
  
 # Usage
 サンプルの実行方法は以下です。
