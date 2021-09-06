@@ -1,5 +1,6 @@
 # imread_from_url
- cvoverlayimgはOpenCVで透過PNGを画像の上に重ね合わせるクラスです。
+指定されたURLから画像を読み取り、OpenCVで利用できる形式を返す関数です。<Br>
+Read the image from the specified URL and enable it to be handled by OpenCV.
  
 # Requirement
 * OpenCV 3.4.2 or later
