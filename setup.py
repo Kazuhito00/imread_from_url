@@ -9,4 +9,8 @@ setup(
     author='Kazuhito Takahashi',
     url='https://github.com/Kazuhito00/imread_from_url',
     packages=find_packages(),
+    install_requires=[
+        'opencv-python>=3.4.2',
+        'Pillow>=6.1.0',
+    ],
 )
