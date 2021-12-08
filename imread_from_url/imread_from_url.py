@@ -28,13 +28,22 @@ def imread_from_url(url, seek_index=0, debug=False):
 
     # アニメーションGIF等の複数枚ある画像はシーク
     if 'n_frames' in dir(image):
-        if image.n_frames > 1:
-            if debug:
-                print('n_frames', image.n_frames)
-                print('seek_index', seek_index)
+        if debug:
+            print('n_frames', image.n_frames)
+            print('seek_index', seek_index)
+
+        if 0 <= seek_index < image.n_frames:
             image.seek(seek_index)
-        else:
+        elif seek_index < 0:
+            print('The index when seeking must be a positive integer')
+            print('seek_index:', seek_index)
             image.seek(0)
+        else:
+            print('An index outside the seek range was specified')
+            print('n_frames:', image.n_frames)
+            print('seek_index:', seek_index)
+            image.seek(image.n_frames - 1)
+        image = image.convert('RGB')
 
     # RGB -> BGR
     image = cv2.cvtColor(np.array(image, dtype=np.uint8), cv2.COLOR_RGB2BGR)
