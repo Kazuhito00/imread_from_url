@@ -6,13 +6,16 @@ from io import BytesIO
 import cv2
 import numpy as np
 from PIL import Image
+from fake_useragent import UserAgent
 
 
 def imread_from_url(url, seek_index=0, debug=False):
     image = None
 
     # URLから画像を取得
-    response = requests.get(url)
+    ua = UserAgent()
+    header = {'User-Agent': str(ua.chrome)}
+    response = requests.get(url, headers=header)
 
     # PILでURLの画像を読み込み
     try:

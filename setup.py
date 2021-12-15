@@ -13,5 +13,6 @@ setup(
         'opencv-python>=3.4.2',
         'Pillow>=6.1.0',
         'requests>=2.22.0',
+        'fake-useragent>=0.1.11',        
     ],
 )
