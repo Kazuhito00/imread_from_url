@@ -2,7 +2,7 @@
 指定されたURLから画像を読み取り、OpenCV形式で返す関数です。<Br>
 Read the image from the specified URL and enable it to be handled by OpenCV.
  
-# Note(2022年1月21日追記)
+# Note(2022年1月21日現在)
 実行時に以下のようなエラーが発生するケースがあります。<br>
 その場合、もう一度`imread_from_url()`を実行するか`!pip install imread_from_url==0.1.2`で旧バージョンをインストールしてください。
 ```
